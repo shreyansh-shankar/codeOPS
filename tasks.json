@@ -1,0 +1,130 @@
+[
+  {
+    "name": "Launch Satellite",
+    "status": "Deployed",
+    "level": 2,
+    "codename": "SAT-001",
+    "uptime": "2025-05-16 14:17:02",
+    "subtasks": [
+      {
+        "name": "Fuel Prep",
+        "status": "Deployed",
+        "level": 1,
+        "codename": "FUEL-001",
+        "uptime": "2025-05-16 14:17:02",
+        "subtasks": [
+          {
+            "name": "Acquire Materials",
+            "status": "Deployed",
+            "level": 0,
+            "codename": "MAT-001",
+            "uptime": "2025-05-16 14:17:02",
+            "subtasks": []
+          }
+        ]
+      },
+      {
+        "name": "Initialize Tanks",
+        "status": "Deployed",
+        "level": 0,
+        "codename": "3913AA",
+        "uptime": "2025-05-16 14:17:02",
+        "subtasks": []
+      }
+    ]
+  },
+  {
+    "name": "Build Rocket",
+    "status": "Initiated",
+    "level": 3,
+    "codename": "ROC-001",
+    "uptime": "2025-05-16 14:17:02",
+    "subtasks": [
+      {
+        "name": "Engine Design",
+        "status": "In Progress",
+        "level": 2,
+        "codename": "ENG-001",
+        "uptime": "2025-05-16 14:17:02",
+        "subtasks": [
+          {
+            "name": "Fuel Efficiency Tests",
+            "status": "Accomplished",
+            "level": 1,
+            "codename": "FET-001",
+            "uptime": "2025-05-16 14:17:02",
+            "subtasks": [
+              {
+                "name": "Optimize Nozzles",
+                "status": "Deployed",
+                "level": 0,
+                "codename": "NOZ-001",
+                "uptime": "2025-05-16 14:17:02",
+                "subtasks": []
+              },
+              {
+                "name": "Check Fuel Tanks",
+                "status": "Deployed",
+                "level": 0,
+                "codename": "EB741B",
+                "uptime": "2025-05-16 14:17:02",
+                "subtasks": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Build Space Station",
+    "status": "Deployed",
+    "level": 1,
+    "codename": "D3DEDA",
+    "uptime": "2025-05-16 14:17:02",
+    "subtasks": [
+      {
+        "name": "Install Solar Panels",
+        "status": "Deployed",
+        "level": 0,
+        "codename": "LGY-494",
+        "uptime": "2025-05-16 14:17:02",
+        "subtasks": []
+      }
+    ]
+  },
+  {
+    "name": "Rescue Astronauts",
+    "status": "Accomplished",
+    "level": 2,
+    "codename": "A1B201",
+    "uptime": "2025-05-16 14:17:02",
+    "subtasks": [
+      {
+        "name": "Build Rescue Module",
+        "status": "Deployed",
+        "level": 1,
+        "codename": "7103BE",
+        "uptime": "2025-05-16 14:17:02",
+        "subtasks": [
+          {
+            "name": "Blueprint the Spacecraft",
+            "status": "Accomplished",
+            "level": 0,
+            "codename": "8EC735",
+            "uptime": "2025-05-16 14:17:02",
+            "subtasks": []
+          }
+        ]
+      },
+      {
+        "name": "Dock To Spacecraft",
+        "status": "Deployed",
+        "level": 0,
+        "codename": "0EDB03",
+        "uptime": "2025-05-16 14:17:02",
+        "subtasks": []
+      }
+    ]
+  }
+]
