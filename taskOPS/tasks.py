@@ -103,12 +103,12 @@ class TaskManager:
     def is_codename_unique(self, codename=None):
         return codename not in self.used_codenames
 
-    def save_data(self, filename="tasks.json"):
+    def save_data(self, filename="taskOPS/tasks.json"):
         data = [task.to_dict() for task in self.top_level_tasks]
         with open(filename, "w") as f:
             json.dump(data, f, indent=2)
     
-    def load_from_file(self, filename="tasks.json"):
+    def load_from_file(self, filename="taskOPS/tasks.json"):
         if not os.path.exists(filename):
             print(f"📂 {filename} not found.")
             return
