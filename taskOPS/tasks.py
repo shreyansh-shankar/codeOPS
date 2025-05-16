@@ -3,6 +3,7 @@ import json
 import os
 from datetime import datetime
 from helper import *
+from paths import setup_task_file
 
 module_status_color = {
     "Deployed": "bold white",
@@ -96,19 +97,22 @@ class Task:
         return task
 
 class TaskManager:
-    def __init__(self):
+    def __init__(self, task_file):
         self.top_level_tasks = []
         self.used_codenames = []
+        self.task_file = task_file
 
     def is_codename_unique(self, codename=None):
         return codename not in self.used_codenames
 
-    def save_data(self, filename="taskOPS/tasks.json"):
+    def save_data(self, filename=None):
+        filename = self.task_file
         data = [task.to_dict() for task in self.top_level_tasks]
         with open(filename, "w") as f:
             json.dump(data, f, indent=2)
     
-    def load_from_file(self, filename="taskOPS/tasks.json"):
+    def load_from_file(self, filename=None):
+        filename = self.task_file
         if not os.path.exists(filename):
             print(f"📂 {filename} not found.")
             return
@@ -183,5 +187,6 @@ def change_module_status(task=None):
             # Enter selected task
             selected_task = children[choice - 1] if task else children[choice]
             change_module_status(selected_task)
-            
-manager = TaskManager()
+
+filepath = setup_task_file()
+manager = TaskManager(filepath)

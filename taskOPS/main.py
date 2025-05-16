@@ -2,6 +2,7 @@ import time
 import sys
 from tasks import *
 from helper import *
+from paths import setup_task_file
 
 missions = [
     "Deploy New Modules",
@@ -101,8 +102,13 @@ def decommission_module(task=None):
             decommission_module(selected_task)
 
 def main():
+    task_file_path = setup_task_file()
+    if not task_file_path:
+        print("❌ Could not set up task file. Exiting.")
+        time.sleep(2.5)
+        return
     boot_sequence()
-    manager.load_from_file()
+    manager.load_from_file(task_file_path)
     
     while True:
         choice = interactive_menu(missions)
