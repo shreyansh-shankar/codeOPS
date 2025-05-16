@@ -14,6 +14,13 @@
 
 ---
 
+## 📸 Demo
+
+![Screenshot_20250516_190146](https://github.com/user-attachments/assets/cd14f968-8c20-4c64-b9ff-2d10feb63b2a)
+
+
+---
+
 ## 🛠️ Features
 
 ✅ Fast and responsive CLI interface  
